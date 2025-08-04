@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top left, #98bbe7, #496991, #1e3f64);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container da página */
+.container {
+  max-width: 600px;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card do questionário */
+.card {
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h1,
+.card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #1a202c;
+}
+
+.card p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Botões */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 0.9rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Botões de resposta */
+.btn.yes {
+  background: #4caf50;
+  color: white;
+}
+
+.btn.yes:hover {
+  background: #43a047;
+}
+
+.btn.no {
+  background: #f44336;
+  color: white;
+}
+
+.btn.no:hover {
+  background: #e53935;
+}
+
+/* Botão de início ou reinício */
+.start-btn {
+  background: #1e90ff;
+  color: white;
+  border-radius: 12px;
+}
+
+.start-btn:hover {
+  background: #1c86ee;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .card {
+    padding: 2rem 1.2rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
